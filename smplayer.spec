@@ -1,7 +1,7 @@
 Summary:	Themes for SMplayer
 Name:		smplayer-themes
 Version:	0.1
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL
 Group:		Video
 Url:		http://smplayer.sourceforge.net
@@ -29,4 +29,5 @@ cp -r themes/* %{buildroot}%{_datadir}/smplayer/themes
 %files
 %defattr(644,root,root,755)
 %doc README.txt
+%dir %{_datadir}/smplayer/themes
 %{_datadir}/smplayer/themes/*
