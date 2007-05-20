@@ -28,5 +28,5 @@ cp -r themes/* %{buildroot}%{_datadir}/smplayer/themes
 
 %files
 %defattr(644,root,root,755)
-%doc *.txt
+%doc README.txt
 %{_datadir}/smplayer/themes/*
