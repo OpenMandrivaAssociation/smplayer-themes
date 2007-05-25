@@ -1,7 +1,7 @@
-Summary:	Themes for SMplayer
+Summary:	Themes for SMPlayer
 Name:		smplayer-themes
-Version:	0.1
-Release:	%mkrel 2
+Version:	0.1.1
+Release:	%mkrel 1
 License:	GPL
 Group:		Video
 Url:		http://smplayer.sourceforge.net
@@ -11,7 +11,7 @@ Buildarch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
-A set of themes for SMplayer.
+A set of themes for SMPlayer.
 
 %prep
 %setup -q
@@ -20,8 +20,7 @@ A set of themes for SMplayer.
 %install
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
-mkdir -p %{buildroot}%{_datadir}/smplayer/themes
-cp -r themes/* %{buildroot}%{_datadir}/smplayer/themes
+%makeinstall DESTDIR=%{buildroot} PREFIX=%{_prefix}
 
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
