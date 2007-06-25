@@ -1,6 +1,6 @@
 Summary:	Themes for SMPlayer
 Name:		smplayer-themes
-Version:	0.1.1
+Version:	0.1.2
 Release:	%mkrel 1
 License:	GPL
 Group:		Video
@@ -20,7 +20,7 @@ A set of themes for SMPlayer.
 %install
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
-%makeinstall DESTDIR=%{buildroot} PREFIX=%{_prefix}
+%makeinstall_std DESTDIR=%{buildroot} PREFIX=%{_prefix}
 
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
