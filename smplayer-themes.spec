@@ -1,6 +1,6 @@
 Summary:	Themes for SMPlayer
 Name:		smplayer-themes
-Version:	0.1.2
+Version:	0.1.3
 Release:	%mkrel 1
 License:	GPL
 Group:		Video
