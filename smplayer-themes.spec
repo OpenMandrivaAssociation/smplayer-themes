@@ -7,7 +7,6 @@ Group:		Video
 Url:		http://smplayer.sourceforge.net
 Source0:	http://smplayer.sourceforge.net/linux/download/%{name}-%{version}.tar.bz2
 Buildarch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 A set of themes for SMPlayer.
