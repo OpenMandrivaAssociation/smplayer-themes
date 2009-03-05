@@ -1,11 +1,11 @@
 Summary:	Themes for SMPlayer
 Name:		smplayer-themes
-Version:	0.1.18
+Version:	0.1.19
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Video
 Url:		http://smplayer.sourceforge.net
-Source0:	http://smplayer.sourceforge.net/linux/download/%{name}-%{version}.tar.bz2
+Source0:	http://downloads.sourceforge.net/smplayer/%{name}-%{version}.tar.bz2
 %if %mdkversion > 200800
 Requires:	smplayer
 %endif
