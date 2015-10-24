@@ -20,7 +20,10 @@ A set of themes for SMPlayer.
 %build
 
 %install
-%makeinstall_std DESTDIR=%{buildroot} PREFIX=%{_prefix}
+#%makeinstall_std DESTDIR=%{buildroot} PREFIX=%{_prefix}
+
+mkdir -p %{buildroot}%{_datadir}/smplayer/themes
+cp -a themes/* %{buildroot}%{_datadir}/smplayer/themes
 
 %files
 %doc README.txt Changelog
