@@ -7,6 +7,7 @@ License:	GPLv2+
 Group:		Video
 Url:		http://smplayer.sourceforge.net
 Source0:	http://downloads.sourceforge.net/smplayer/%{name}-%{version}.tar.bz2
+BuildRequires:	pkgconfig(Qt5Core)
 Requires:	smplayer
 Buildarch:	noarch
 Obsoletes:	%{name}-0.1.20
