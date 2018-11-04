@@ -15,17 +15,16 @@ Obsoletes:	%{name}-0.1.20
 A set of themes for SMPlayer.
 
 %prep
+
+%prep
 %setup -q
 
 %build
+%make_build PREFIX=%{_prefix}
 
 %install
-#%makeinstall_std DESTDIR=%{buildroot} PREFIX=%{_prefix}
-
-mkdir -p %{buildroot}%{_datadir}/smplayer/themes
-cp -a themes/* %{buildroot}%{_datadir}/smplayer/themes
+%make_install PREFIX=%{_prefix}
 
 %files
 %doc README.txt Changelog
-%dir %{_datadir}/smplayer/themes
-%{_datadir}/smplayer/themes/*
+%{_datadir}/smplayer/themes/
