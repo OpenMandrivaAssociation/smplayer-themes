@@ -15,8 +15,6 @@ Obsoletes:	%{name}-0.1.20
 A set of themes for SMPlayer.
 
 %prep
-
-%prep
 %setup -q
 
 %build
