@@ -9,6 +9,8 @@ Source0:	http://downloads.sourceforge.net/smplayer/%{name}-%{version}.tar.bz2
 Requires:	smplayer
 Buildarch:	noarch
 Obsoletes:	%{name}-0.1.20
+# For rcc
+BuildRequires:	cmake(Qt5Core)
 %(for theme in Breeze Breeze-dark Dark Faenza-Darkest Faenza-Silver Faenza Gartoon Gnome Masalla Monochrome Noia Numix-remix Numix-uTouch Nuvola Oxygen Oxygen-Air Oxygen-KDE Oxygen-Refit Papirus PapirusDark Silk Tango blackPanther-Light blackPanther-Real blackPanther-VistaLike ePapirus; do
 	echo "Requires: smplayer-theme-$theme = %{EVRD}"
 done)
