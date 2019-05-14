@@ -22,6 +22,7 @@ A set of themes for SMPlayer.
 %setup -q
 
 %build
+export PATH=%{_libdir}/qt5/bin:$PATH
 %make
 
 %install
