@@ -1,6 +1,6 @@
 Summary:	Themes for SMPlayer
 Name:		smplayer-themes
-Version:	18.6.0
+Version:	20.11.0
 Release:	1
 License:	GPLv2+
 Group:		Video
