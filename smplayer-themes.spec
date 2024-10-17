@@ -4,7 +4,7 @@ Version:	20.11.0
 Release:	2
 License:	GPLv2+
 Group:		Video
-Url:		http://smplayer.sourceforge.net
+Url:		https://smplayer.sourceforge.net
 Source0:	http://downloads.sourceforge.net/smplayer/%{name}-%{version}.tar.bz2
 Requires:	smplayer
 Buildarch:	noarch
